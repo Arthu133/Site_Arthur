@@ -19,7 +19,6 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <canvas id="signal-canvas" aria-hidden="true"></canvas>
     <div class="page-shell">
       <header class="topbar" data-nav>
         <a class="brand" href="#home" aria-label="Home">
@@ -30,6 +29,7 @@
           <a href="#about" data-i18n="nav.about">About</a>
           <a href="#experience" data-i18n="nav.experience">Experience</a>
           <a href="#skills" data-i18n="nav.skills">Skills</a>
+          <a href="#labs" data-i18n="nav.labs">Labs</a>
           <a href="#contact" data-i18n="nav.contact">Contact</a>
         </nav>
         <div class="language-switch" aria-label="Language selector">
@@ -56,34 +56,30 @@
               </div>
             </div>
 
-            <aside class="signal-panel investigation-panel reveal" aria-label="Cyber defense focus">
-              <div class="panel-status">
-                <span class="status-dot"></span>
-                <span data-i18n="panel.title">Investigation flow</span>
+            <aside class="hero-art reveal" aria-label="Portfolio visual highlights">
+              <div class="artifact-stage" aria-hidden="true">
+                <span class="artifact-core"></span>
+                <span class="artifact-ring ring-one"></span>
+                <span class="artifact-ring ring-two"></span>
+                <span class="artifact-slice slice-one"></span>
+                <span class="artifact-slice slice-two"></span>
+                <span class="artifact-line line-one"></span>
+                <span class="artifact-line line-two"></span>
               </div>
-              <div class="signal-map" aria-hidden="true">
-                <span class="map-node is-hot">Alert</span>
-                <span class="map-link"></span>
-                <span class="map-node">Enrich</span>
-                <span class="map-link"></span>
-                <span class="map-node">Scope</span>
-                <span class="map-link"></span>
-                <span class="map-node">Contain</span>
+              <div class="editorial-stats">
+                <div class="editorial-stat">
+                  <strong>DBIR</strong>
+                  <span>2026</span>
+                </div>
+                <div class="editorial-stat">
+                  <strong>75%</strong>
+                  <span data-i18n="hero.stats.triage">less manual triage</span>
+                </div>
+                <div class="editorial-stat">
+                  <strong>30%</strong>
+                  <span data-i18n="hero.stats.sla">faster IR SLA</span>
+                </div>
               </div>
-              <dl class="telemetry-list compact">
-                <div>
-                  <dt data-i18n="panel.ir">IR</dt>
-                  <dd>01</dd>
-                </div>
-                <div>
-                  <dt data-i18n="panel.cloud">Cloud</dt>
-                  <dd>02</dd>
-                </div>
-                <div>
-                  <dt data-i18n="panel.soar">SOAR</dt>
-                  <dd>03</dd>
-                </div>
-              </dl>
             </aside>
           </div>
         </section>
@@ -261,45 +257,34 @@
           </div>
         </section>
 
-        <section class="section-band" id="selected-work">
+        <section class="section-band labs-band" id="labs">
           <div class="content-grid">
             <div class="section-heading reveal">
-              <p class="eyebrow" data-i18n="work.eyebrow">Selected Work</p>
-              <h2 data-i18n="work.title">Concise examples of the work I like to build around.</h2>
+              <p class="eyebrow" data-i18n="labs.eyebrow">Labs & Tools</p>
+              <h2 data-i18n="labs.title">Hands-on environments and investigation tooling.</h2>
             </div>
-            <div class="case-grid">
-              <article class="case-card reveal">
-                <div class="case-meta">
-                  <span>IR</span>
-                  <span>Containment</span>
-                </div>
-                <h3 data-i18n="work.identity.title">Privileged identity compromise</h3>
-                <p data-i18n="work.identity.body">
-                  Session scoping, authentication trail analysis and containment planning without exposing sensitive
-                  operational details.
+            <div class="lab-grid">
+              <article class="lab-card lab-card-featured reveal">
+                <span class="lab-mark">BT</span>
+                <h3>BTForensic</h3>
+                <p data-i18n="labs.btforensic">
+                  Authorial CLI for browser log forensics, event correlation and EDR-oriented investigative flows.
                 </p>
               </article>
-              <article class="case-card reveal">
-                <div class="case-meta">
-                  <span>Threat Hunt</span>
-                  <span>ATT&amp;CK</span>
-                </div>
-                <h3 data-i18n="work.lateral.title">Lateral movement hunting</h3>
-                <p data-i18n="work.lateral.body">
-                  Hypotheses around remote execution, credential abuse and internal discovery using endpoint, network
-                  and identity telemetry.
-                </p>
+              <article class="lab-card reveal">
+                <span class="lab-mark">KL</span>
+                <h3>Kali Linux</h3>
+                <p data-i18n="labs.kali">Security lab environment for analysis, validation and offensive awareness.</p>
               </article>
-              <article class="case-card reveal">
-                <div class="case-meta">
-                  <span>Automation</span>
-                  <span>SOAR</span>
-                </div>
-                <h3 data-i18n="work.automation.title">Evidence collection workflows</h3>
-                <p data-i18n="work.automation.body">
-                  API-driven enrichment and evidence gathering to standardize triage, reduce repetitive work and
-                  improve response consistency.
-                </p>
+              <article class="lab-card reveal">
+                <span class="lab-mark">HTB</span>
+                <h3>Hack The Box</h3>
+                <p data-i18n="labs.htb">Practical scenarios for adversary behavior, exploitation paths and defense perspective.</p>
+              </article>
+              <article class="lab-card reveal">
+                <span class="lab-mark">THM</span>
+                <h3>TryHackMe</h3>
+                <p data-i18n="labs.thm">Structured practice across fundamentals, SOC workflows and cyber defense topics.</p>
               </article>
             </div>
           </div>
