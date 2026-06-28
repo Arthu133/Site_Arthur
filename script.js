@@ -13,17 +13,17 @@ const translations = {
     },
     hero: {
       eyebrow: "Senior Incident Response Analyst",
-      title: "Incident response, DFIR and automation for resilient cyber defense.",
-      lede:
-        "I help security teams investigate incidents faster, reduce manual effort and improve cyber defense capabilities through automation, detection improvement and operational engineering.",
+      title: "Arthur Henrique",
+      subtitle: "Senior Incident Response Analyst",
+      lede: "Incident Response • DFIR • Cloud IR • Detection Engineering • SOAR Automation",
       primaryCta: "View Experience",
       secondaryCta: "Contact"
     },
     panel: {
-      title: "Blue Team operating view",
-      ir: "Triage, containment and evidence-driven response",
-      cloud: "Identity, SaaS and cloud investigation support",
-      soar: "Automation, enrichment and response workflows"
+      title: "Investigation flow",
+      ir: "IR",
+      cloud: "Cloud",
+      soar: "SOAR"
     },
     metrics: {
       ir: "Enterprise incident response and SecOps coordination",
@@ -76,17 +76,19 @@ const translations = {
       }
     },
     impact: {
+      eyebrow: "Selected Impact",
+      title: "Measured improvements and public contribution.",
+      triage: {
+        title: "Less manual triage effort",
+        body: "Reduced manual triage effort through SOAR automation and evidence enrichment."
+      },
+      sla: {
+        title: "Faster response SLA",
+        body: "Improved Incident Response SLA through automated evidence collection, enrichment and alert correlation."
+      },
       dbir: {
         title: "Public research contribution",
         body: "Active contributor to the Verizon Data Breach Investigations Report, DBIR 2026."
-      },
-      soar: {
-        title: "Reduced manual triage",
-        body: "Built SOAR and API-based workflows for enrichment, evidence collection and alert correlation."
-      },
-      hunt: {
-        title: "Improved investigation depth",
-        body: "Supported high-priority incident investigations, postmortems and threat hunting activities."
       },
       metrics: {
         title: "Operational visibility",
@@ -120,6 +122,16 @@ const translations = {
       eyebrow: "Contact",
       title: "Open to conversations about DFIR, SecOps and security automation.",
       body: "The public contact channel for this portfolio is GitHub."
+    },
+    education: {
+      eyebrow: "Education",
+      title: "B.S. in Computer Science",
+      body: "PUC Minas, 2021 - 2027."
+    },
+    languages: {
+      eyebrow: "Languages",
+      title: "Portuguese and English",
+      body: "Portuguese: Native/Bilingual. English: Full Professional."
     }
   },
   pt: {
@@ -136,17 +148,17 @@ const translations = {
     },
     hero: {
       eyebrow: "Senior Incident Response Analyst",
-      title: "Incident response, DFIR e automacao para uma defesa cibernetica resiliente.",
-      lede:
-        "Ajudo times de seguranca a investigar incidentes com mais velocidade, reduzir esforco manual e fortalecer capacidades de defesa cibernetica por meio de automacao, melhoria de deteccoes e engenharia operacional.",
+      title: "Arthur Henrique",
+      subtitle: "Senior Incident Response Analyst",
+      lede: "Incident Response • DFIR • Cloud IR • Detection Engineering • Automacao SOAR",
       primaryCta: "Ver experiencia",
       secondaryCta: "Contato"
     },
     panel: {
-      title: "Visao operacional Blue Team",
-      ir: "Triagem, contencao e resposta orientada por evidencias",
-      cloud: "Apoio em investigacoes de identidade, SaaS e cloud",
-      soar: "Automacao, enriquecimento e fluxos de resposta"
+      title: "Fluxo de investigacao",
+      ir: "IR",
+      cloud: "Cloud",
+      soar: "SOAR"
     },
     metrics: {
       ir: "Resposta a incidentes corporativa e coordenacao SecOps",
@@ -199,17 +211,19 @@ const translations = {
       }
     },
     impact: {
+      eyebrow: "Impactos selecionados",
+      title: "Melhorias mensuraveis e contribuicao publica.",
+      triage: {
+        title: "Menos esforco manual de triagem",
+        body: "Reducao de esforco manual de triagem por meio de automacao SOAR e enriquecimento de evidencias."
+      },
+      sla: {
+        title: "SLA de resposta mais rapido",
+        body: "Melhoria de SLA de Incident Response com coleta automatizada de evidencias, enriquecimento e correlacao de alertas."
+      },
       dbir: {
         title: "Contribuicao em pesquisa publica",
         body: "Contribuidor ativo do Verizon Data Breach Investigations Report, DBIR 2026."
-      },
-      soar: {
-        title: "Reducao de triagem manual",
-        body: "Construcao de fluxos SOAR e automacoes via API para enriquecimento, coleta de evidencias e correlacao de alertas."
-      },
-      hunt: {
-        title: "Maior profundidade investigativa",
-        body: "Apoio em investigacoes de incidentes criticos, postmortems e atividades de threat hunting."
       },
       metrics: {
         title: "Visibilidade operacional",
@@ -243,6 +257,16 @@ const translations = {
       eyebrow: "Contato",
       title: "Aberto a conversas sobre DFIR, SecOps e automacao de seguranca.",
       body: "O canal publico de contato deste portfolio e o GitHub."
+    },
+    education: {
+      eyebrow: "Educacao",
+      title: "Bacharelado em Ciencia da Computacao",
+      body: "PUC Minas, 2021 - 2027."
+    },
+    languages: {
+      eyebrow: "Idiomas",
+      title: "Portugues e Ingles",
+      body: "Portugues: Nativo/Bilingue. Ingles: Profissional Avancado."
     }
   }
 };
