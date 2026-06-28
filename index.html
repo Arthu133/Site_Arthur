@@ -1,414 +1,306 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-  <!-- CSS -->
-  <link rel="stylesheet" href="rm-dev-main/assets/css/styles.css" />
-
-  <!-- AOS -->
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-
-  <!-- FONTAWESOME -->
-  <link rel="stylesheet" href="rm-dev-main/assets/css/fontawesome.min.css" />
-
-  <!--Particulas-->
-  <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-
-  <!--EmailJS-->
-  <script type="text/javascript" src="https://cdn.emailjs.com/sdk/2.3.2/email.min.js"></script>
- 
-
-
-  <!-- FAVICON -->
-  <link rel="icon" type="image/x-icon" href="rm-dev-main/assets/img/favicon-rmdev.ico">
-
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-80XVHS2NWN"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
-    gtag('js', new Date());
-
-    gtag('config', 'G-80XVHS2NWN');
-  </script>
-
-  <title>Arthur Dias</title>
-  <meta name="description"
-    content="">
-
-</head>
-
-<body>
-
-  <!-- Botão do tema -->
-  <button id="color-toggle" class="color-toggle-button">
-    <i id="theme-icon" class="fas fa-lightbulb"></i>
-  </button>
-
-  <!-- Botão do WhatsApp -->
-  <div class="whatsapp-button">
-    <a href="https://api.whatsapp.com/send?phone=5531986585947" target="_blank" rel="noopener noreferrer">
-      <i class="fab fa-whatsapp"></i>
-    </a>
-  </div>
-
-  <!-- Botão "Voltar ao Topo" -->
-  <div class="back-to-top" id="backToTop">
-    <i class="fas fa-chevron-up"></i>
-  </div>
-
-
-  <!-- HEADER -->
-  <header>
-    <div class="container flex-row">
-      <nav>
-        <ul class="header__menu flex-row">
-          <li>
-            <a href="#hero">Home</a>
-          </li>
-          <li>
-            <a href="#about">About</a>
-          </li>
-          <li>
-            <a href="#services">Skills</a>
-          </li>
-          <li>
-            <a href="#projects">Projects</a>
-          </li>
-          <li>
-            <a href="#team">Professional</a>
-          </li>
-          <li>
-            <a href="#contact">Contact</a>
-          </li>
-        </ul>
-      </nav>
-    </div>
-  </header>
-
-  <!-- INÍCIO -->
-  <section id="hero" class="container flex-row">
-    <div id="particles-js"></div>
-    <div class="hero__content">
-      <h1 class="title">Hi, i'm Arthur Dias</h1>
-      <p class="text">
-        A developer who is always looking for innovative and challenging projects.
-      </p>
-      <a href="https://arthu133.github.io/Portfolio/CV..pdf" class="btn btn-primary">Download my CV.</a>
-    </div>
-    <div class="hero__img">
-      <img src="rm-dev-main/assets/img/hero.png" alt="">
-    </div>
-  </section>
-
-  <!-- SOBRE -->
-  <section id="about" class="container flex-center flex-column" data-aos="fade-up">
-    <h5 class="section-subheading" data-aos="fade-right">A little about me</h5>
-
-
-    <div class="features text-center">
-      <!-- Primeiro Card: Sites Entregues -->
-      <div class="feature" data-aos="fade-up-right">
-        <div class="feature__counter">
-          + than <span id="sitesCounter">5</span>
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Arthur Henrique, Senior Incident Response Analyst focused on Incident Response, SOC Operations, DFIR, Cloud IR, Threat Hunting, Detection Engineering and Security Automation."
+    />
+    <meta name="theme-color" content="#0b0b0f" />
+    <meta property="og:title" content="Arthur Henrique | Senior Incident Response Analyst" />
+    <meta
+      property="og:description"
+      content="Cybersecurity portfolio focused on Incident Response, SOC Operations, DFIR, Threat Hunting and Security Automation."
+    />
+    <meta property="og:type" content="website" />
+    <title>Arthur Henrique | Senior Incident Response Analyst</title>
+    <link rel="preload" href="assets/dfir-hero.png" as="image" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <canvas id="signal-canvas" aria-hidden="true"></canvas>
+    <div class="page-shell">
+      <header class="topbar" data-nav>
+        <a class="brand" href="#home" aria-label="Home">
+          <span class="brand-mark">A</span>
+          <span>Arthur Henrique</span>
+        </a>
+        <nav class="main-nav" aria-label="Primary navigation">
+          <a href="#about" data-i18n="nav.about">About</a>
+          <a href="#experience" data-i18n="nav.experience">Experience</a>
+          <a href="#skills" data-i18n="nav.skills">Skills</a>
+          <a href="#contact" data-i18n="nav.contact">Contact</a>
+        </nav>
+        <div class="language-switch" aria-label="Language selector">
+          <button type="button" data-lang-option="en" aria-pressed="true">EN</button>
+          <button type="button" data-lang-option="pt" aria-pressed="false">PT-BR</button>
         </div>
-        <h3 class="feature__title">Sofwtares </h3>
-        <div class="feature__text">
-          <p>Created from scratch.</p>
-        </div>
-      </div>
+      </header>
 
-      <!-- Segundo Card: Projetos Concluídos -->
-      <div class="feature" data-aos="zoom-in">
-        <div class="feature__counter">
-          + than <span id="projectsCounter">10</span>
-        </div>
-        <h3 class="feature__title">Completed Projects</h3>
-        <div class="feature__text">
-          <p>Executed with mastery across various technologies and platforms.</p>
-        </div>
-      </div>
-
-
-    </div>
-
-    <div class="about__details flex-center" data-aos="flip-left">
-      <div class="about__details-content">
-        <h1>Sofware Dev.</h1>
-        <p>I'm Arthur Dias, a developer dedicated to innovative and challenging projects, with a focus on robust solutions. I have experience in frameworks such as Spring Boot, Laravel and Django, as well as working with technologies such as oneAPI and Blockchains. My portfolio includes projects ranging from convolutional neural networks (CNN) to complex software development. Always seeking to evolve, I focus on improving skills for my personal and professional development in the world of technology.</p>
-        
-      </div>
-      <div class="about__details-img">
-        <img src="rm-dev-main/assets/img/about.png" alt="">
-      </div>
-    </div>
-  </section>
-
-  <!-- SERVIÇOS -->
-  <section id="services">
-    <div class="container">
-      <h5 class="section-subheading" data-aos="fade-up" data-aos-duration="100">Back-End areas</h5>
-      <h2 class="section-heading right" data-aos="fade-up" data-aos-delay="100" data-aos-duration="700">
-        Areas of interest
-      </h2>
-
-      <div class="services">
-        <!-- Cada serviço com uma animação mais suave e duração maior -->
-        <div class="service" data-aos="fade-right" data-aos-delay="100" data-aos-duration="700"
-          data-aos-easing="ease-out-quart">
-          <div class="service__icon">
-            <img src="rm-dev-main/assets/img/sites.png" alt="criacao de sites">
-          </div>
-          <h3 class="services__title">Softwares</h3>
-
-        </div>
-
-        <div class="service" data-aos="fade-left" data-aos-delay="200" data-aos-duration="700"
-          data-aos-easing="ease-out-quart">
-          <div class="service__icon">
-            <img src="rm-dev-main/assets/img/otimizacao.png" alt="otimizacao de sites">
-          </div>
-          <h3 class="services__title">Artificial Inteligent</h3>
-
-        </div>
-
-        <div class="service" data-aos="fade-right" data-aos-delay="300" data-aos-duration="700"
-          data-aos-easing="ease-out-quart">
-          <div class="service__icon">
-            <img src="rm-dev-main/assets/img/customizacao.png" alt="customizacao avancada">
-          </div>
-          <h3 class="services__title">Deep Learning</h3>
-
-        </div>
-
-        <div class="service" data-aos="fade-left" data-aos-delay="400" data-aos-duration="700"
-          data-aos-easing="ease-out-quart">
-          <div class="service__icon">
-            <img src="rm-dev-main/assets/img/suporte.png" alt="suporte">
-          </div>
-          <h3 class="services__title">Data Base</h3>
-
-        </div>
-
-        <div class="service" data-aos="fade-right" data-aos-delay="500" data-aos-duration="700"
-          data-aos-easing="ease-out-quart">
-          <div class="service__icon">
-            <img src="rm-dev-main/assets/img/seo.png" alt="seo">
-          </div>
-          <h3 class="services__title">Blockchain</h3>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- PROJETOS -->
-  <section id="projects">
-    <div class="container">
-      <h5 class="section-subheading" data-aos="fade-up">Real projects</h5>
-      <h2 class="section-heading" data-aos="fade-up" data-aos-delay="100">
-        Know my services
-      </h2>
-      <div class="projects">
-        <!-- Projeto 1 -->
-        <div class="project">
-          <div class="project__img" data-aos="fade-up" data-aos-delay="300">
-            <img src="rm-dev-main/assets/img/12795970.png" alt="">
-          </div>
-          <div class="project__content" data-aos="fade-up" data-aos-delay="320">
-            <h3 class="project__title">
-              Parallelization of the Intel OneAPI API to identify network intrusions
-            </h3>
-            <p class="project__text">
-              Dedicated to the study and development of neural networks to identify network intrusions and parallel blockchain using oneAPI. This project aims to explore the capabilities of oneAPI, an Intel initiative to unify the programming of different types of hardware, including CPUs, GPUs, FPGAs, among others, through a set of tools and libraries.
-            </p>
-            <a href="https://github.com/laura3141/oneAPI" target="_blank" class="btn btn-secondary">Repository</a>
-          </div>
-        </div>
-
-
-        <!-- Projeto 2 -->
-        <div class="project">
-          <div class="project__img" data-aos="fade-up" data-aos-delay="200">
-            <img src="rm-dev-main/assets/img/smart.png" alt="">
-          </div>
-          <div class="project__content" data-aos="fade-up" data-aos-delay="220">
-            <h3 class="project__title">
-              Investment App
-            </h3>
-            <p class="project__text">
-              The SmartInvest project is currently under development and aims to serve as an advanced investment portfolio simulator. It will help users optimize risk and return, create diversified portfolios, track performance, and run scenario simulations. The project focuses on providing tools for financial education and decision-making, with a strong emphasis on efficient asset allocation and risk management strategies.
-            </p>
-            <a href="https://github.com/Arthu133/SmartInvest" target="_blank" class="btn btn-secondary">Repository</a>
-          </div>
-        </div>
-
-        <!-- Projeto 3 -->
-        <div class="project">
-          <div class="project__img" data-aos="fade-up" data-aos-delay="300">
-            <img src="rm-dev-main/assets/img/cnn.png" alt="">
-          </div>
-          <div class="project__content" data-aos="fade-up" data-aos-delay="320">
-            <h3 class="project__title">
-              Convolutional neural networks to identify câncers
-            </h3>
-            <p class="project__text">
-              The project applies convolutional neural networks (CNNs) to analyze Pap smear images for early detection of cervical cancer. By leveraging deep learning, the model classifies cellular images, identifying abnormalities that could indicate cancerous or pre-cancerous conditions. This automated approach aims to enhance diagnostic accuracy and efficiency, providing valuable support in medical screenings and improving the overall detection process for cervical cancer through image analysis.
-            </p>
-            <a href="https://www.home.copfy.com.br/" target="_blank" class="btn btn-secondary">Repository</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- PROFISSIONAL -->
-  <section id="team" class="container">
-    <h5 class="section-subheading text-center" data-aos="fade-up">Know the professional</h5>
-    <h2 class="section-heading left right text-center" data-aos="fade-up" data-aos-delay="100">Experience and Dedication
-      in software development</h2>
-
-    <div class="members">
-      <div class="member">
-        <div class="member__img" data-aos="fade-right" data-aos-delay="200">
-          <img src="rm-dev-main/assets/img/membro-rmdev.png" alt="Sua Foto">
-        </div>
-        <div class="member__content" data-aos="fade-left" data-aos-delay="300">
-          <h1>Arthur Henrique Neves Dias</h1>
-          <span>Software Developer</span>
-          <p>Starting in 2021, I dedicate myself to software development and deep learning, focusing on complex challenges. As a Computer Science student,
-            I combine technical and practical knowledge, focusing on excellence
-            of my works.</p>
-          <div class="member__skills">
-            <h3 class="skills-title">Skills</h3>
-            <div class="skills-list">
-              <ul>
-                <li>Java</li>
-                <li>Python</li>
-                <li>C++</li>
-                <li>PHP</li>
-              </ul>
-              <ul>
-                <li>Spring Boot</li>
-                <li>Laravel</li>
-                <li>Django</li>
-                <li>Spark</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-
-
-
-
-  
-  <!-- CONTATO -->
-  <section id="contact">
-    <div class="container">
-      <h5 class="section-subheading text-center" data-aos="fade-up">Contact</h5>
-      <div class="contact">
-
-
-        <!-- Detalhes de Contato -->
-        <div class="contact__details" data-aos="fade-left">
-          <p class="text">
-            Talk to me, whether to start a project or to talk about contractual possibilities.
-          </p>
-          <div class="details">
-            <div class="detail">
-              <div class="detail__icon">
-                <i class="fas fa-phone"></i>
-              </div>
-              <div class="detail__content">
-                <h3>WhatsApp</h3>
-                <p>(31) 98658-5947</p>
+      <main>
+        <section class="hero section-band" id="home">
+          <div class="hero-media" aria-hidden="true"></div>
+          <div class="hero-overlay" aria-hidden="true"></div>
+          <div class="content-grid hero-grid">
+            <div class="hero-copy reveal">
+              <p class="eyebrow" data-i18n="hero.eyebrow">Senior Incident Response Analyst</p>
+              <h1 data-i18n="hero.title">Incident response, DFIR and automation for resilient cyber defense.</h1>
+              <p class="hero-lede" data-i18n="hero.lede">
+                I help security teams investigate incidents faster, reduce manual effort and improve cyber defense
+                capabilities through automation, detection improvement and operational engineering.
+              </p>
+              <div class="hero-actions">
+                <a class="button primary" href="#experience" data-i18n="hero.primaryCta">View Experience</a>
+                <a class="button ghost" href="#contact" data-i18n="hero.secondaryCta">Contact</a>
               </div>
             </div>
-            <div class="detail">
-              <div class="detail__icon">
-                <i class="fas fa-envelope"></i>
+
+            <aside class="signal-panel reveal" aria-label="Cyber defense focus">
+              <div class="panel-status">
+                <span class="status-dot"></span>
+                <span data-i18n="panel.title">Blue Team operating view</span>
               </div>
-              <div class="detail__content">
-                <h3>Email</h3>
-                <p>ahndias@sga.pucminas.br</p>
-              </div>
+              <dl class="telemetry-list">
+                <div>
+                  <dt>IR</dt>
+                  <dd data-i18n="panel.ir">Triage, containment and evidence-driven response</dd>
+                </div>
+                <div>
+                  <dt>Cloud</dt>
+                  <dd data-i18n="panel.cloud">Identity, SaaS and cloud investigation support</dd>
+                </div>
+                <div>
+                  <dt>SOAR</dt>
+                  <dd data-i18n="panel.soar">Automation, enrichment and response workflows</dd>
+                </div>
+              </dl>
+            </aside>
+          </div>
+        </section>
+
+        <section class="section-band impact-band" aria-label="Selected focus areas">
+          <div class="content-grid metrics">
+            <div class="metric reveal">
+              <strong>IR</strong>
+              <span data-i18n="metrics.ir">Enterprise incident response and SecOps coordination</span>
+            </div>
+            <div class="metric reveal">
+              <strong>DFIR</strong>
+              <span data-i18n="metrics.dfir">Evidence collection, timeline analysis and investigation support</span>
+            </div>
+            <div class="metric reveal">
+              <strong>Hunt</strong>
+              <span data-i18n="metrics.hunt">Threat hunting guided by TTPs, telemetry and hypotheses</span>
+            </div>
+            <div class="metric reveal">
+              <strong>SOAR</strong>
+              <span data-i18n="metrics.soar">Automation workflows, APIs and operational engineering</span>
             </div>
           </div>
-        </div>
-      </div>
+        </section>
+
+        <section class="section-band" id="about">
+          <div class="content-grid split-layout">
+            <div class="section-intro reveal">
+              <p class="eyebrow" data-i18n="about.eyebrow">About</p>
+              <h2 data-i18n="about.title">Technical investigation with operational discipline.</h2>
+              <p data-i18n="about.body">
+                I am a cybersecurity professional focused on enterprise Incident Response, SOC operations, DFIR
+                support, cloud and identity investigations, threat hunting, detection engineering and SOAR automation.
+              </p>
+            </div>
+            <div class="capability-grid">
+              <article class="capability-card reveal">
+                <span class="capability-kicker">01</span>
+                <h3 data-i18n="about.cards.response.title">Incident Response</h3>
+                <p data-i18n="about.cards.response.body">
+                  Incident validation, scope, containment priorities, evidence preservation and coordination across
+                  security operations.
+                </p>
+              </article>
+              <article class="capability-card reveal">
+                <span class="capability-kicker">02</span>
+                <h3 data-i18n="about.cards.cloud.title">Cloud and Identity IR</h3>
+                <p data-i18n="about.cards.cloud.body">
+                  Investigations across identity, SaaS and cloud telemetry with attention to access paths, abuse
+                  patterns and exposure.
+                </p>
+              </article>
+              <article class="capability-card reveal">
+                <span class="capability-kicker">03</span>
+                <h3 data-i18n="about.cards.hunting.title">Threat Hunting</h3>
+                <p data-i18n="about.cards.hunting.body">
+                  Hypothesis-led hunts mapped to adversary behavior, abnormal activity, persistence, lateral movement
+                  and exfiltration signals.
+                </p>
+              </article>
+              <article class="capability-card reveal">
+                <span class="capability-kicker">04</span>
+                <h3 data-i18n="about.cards.detection.title">Detection Engineering</h3>
+                <p data-i18n="about.cards.detection.body">
+                  Turning investigation findings into detections, queries, dashboards and measurable improvements to
+                  response workflows.
+                </p>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <section class="section-band method-band" id="experience">
+          <div class="content-grid">
+            <div class="section-heading reveal">
+              <p class="eyebrow" data-i18n="experience.eyebrow">Experience</p>
+              <h2 data-i18n="experience.title">Senior Response Analyst focused on response quality and automation.</h2>
+            </div>
+            <div class="experience-grid">
+              <article class="experience-card reveal">
+                <div class="case-meta">
+                  <span>Wabtec Corporation</span>
+                  <span data-i18n="experience.current.badge">Current focus</span>
+                </div>
+                <h3 data-i18n="experience.current.title">Senior Response Analyst</h3>
+                <p data-i18n="experience.current.body">
+                  Incident Response, SOAR automation, cloud and identity investigations, detection engineering, DFIR
+                  support, threat intelligence and security operations metrics.
+                </p>
+              </article>
+              <article class="experience-card reveal">
+                <div class="case-meta">
+                  <span data-i18n="experience.previous.badge">Previous roles</span>
+                  <span>SOC</span>
+                </div>
+                <h3 data-i18n="experience.previous.title">Response Analyst and Cybersecurity Operations Intern</h3>
+                <p data-i18n="experience.previous.body">
+                  Hands-on experience with SIEM, EDR/XDR, alert triage, case management, evidence collection and
+                  operational security workflows.
+                </p>
+              </article>
+            </div>
+            <div class="timeline">
+              <article class="timeline-item reveal">
+                <span>DBIR</span>
+                <h3 data-i18n="impact.dbir.title">Public research contribution</h3>
+                <p data-i18n="impact.dbir.body">Active contributor to the Verizon Data Breach Investigations Report, DBIR 2026.</p>
+              </article>
+              <article class="timeline-item reveal">
+                <span>SOAR</span>
+                <h3 data-i18n="impact.soar.title">Reduced manual triage</h3>
+                <p data-i18n="impact.soar.body">Built SOAR and API-based workflows for enrichment, evidence collection and alert correlation.</p>
+              </article>
+              <article class="timeline-item reveal">
+                <span>Hunt</span>
+                <h3 data-i18n="impact.hunt.title">Improved investigation depth</h3>
+                <p data-i18n="impact.hunt.body">Supported high-priority incident investigations, postmortems and threat hunting activities.</p>
+              </article>
+              <article class="timeline-item reveal">
+                <span>Metrics</span>
+                <h3 data-i18n="impact.metrics.title">Operational visibility</h3>
+                <p data-i18n="impact.metrics.body">Designed dashboards and metrics to improve visibility into cyber defense operations.</p>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <section class="section-band" id="skills">
+          <div class="content-grid">
+            <div class="section-heading reveal">
+              <p class="eyebrow" data-i18n="skills.eyebrow">Skills</p>
+              <h2 data-i18n="skills.title">Security operations, investigation and engineering toolkit.</h2>
+            </div>
+            <div class="skill-cloud reveal" aria-label="Skills and technologies">
+              <span>Incident Response</span>
+              <span>SOC Operations</span>
+              <span>DFIR</span>
+              <span>Cloud IR</span>
+              <span>Threat Hunting</span>
+              <span>Threat Intelligence</span>
+              <span>Malware Triage</span>
+              <span>Detection Engineering</span>
+              <span>SOAR Automation</span>
+              <span>SIEM</span>
+              <span>EDR/XDR</span>
+              <span>Splunk</span>
+              <span>Splunk ES</span>
+              <span>Splunk SOAR</span>
+              <span>Microsoft Defender</span>
+              <span>Microsoft Defender for Endpoint</span>
+              <span>Entra ID</span>
+              <span>AWS CloudTrail</span>
+              <span>GuardDuty</span>
+              <span>GCP Logs</span>
+              <span>MISP</span>
+              <span>ServiceNow SecOps</span>
+              <span>Power BI</span>
+              <span>Python</span>
+              <span>REST APIs</span>
+              <span>SPL</span>
+              <span>KQL</span>
+              <span>Sigma</span>
+              <span>YARA</span>
+              <span>MITRE ATT&amp;CK</span>
+            </div>
+          </div>
+        </section>
+
+        <section class="section-band" id="selected-work">
+          <div class="content-grid">
+            <div class="section-heading reveal">
+              <p class="eyebrow" data-i18n="work.eyebrow">Selected Work</p>
+              <h2 data-i18n="work.title">Concise examples of the work I like to build around.</h2>
+            </div>
+            <div class="case-grid">
+              <article class="case-card reveal">
+                <div class="case-meta">
+                  <span>IR</span>
+                  <span>Containment</span>
+                </div>
+                <h3 data-i18n="work.identity.title">Privileged identity compromise</h3>
+                <p data-i18n="work.identity.body">
+                  Session scoping, authentication trail analysis and containment planning without exposing sensitive
+                  operational details.
+                </p>
+              </article>
+              <article class="case-card reveal">
+                <div class="case-meta">
+                  <span>Threat Hunt</span>
+                  <span>ATT&amp;CK</span>
+                </div>
+                <h3 data-i18n="work.lateral.title">Lateral movement hunting</h3>
+                <p data-i18n="work.lateral.body">
+                  Hypotheses around remote execution, credential abuse and internal discovery using endpoint, network
+                  and identity telemetry.
+                </p>
+              </article>
+              <article class="case-card reveal">
+                <div class="case-meta">
+                  <span>Automation</span>
+                  <span>SOAR</span>
+                </div>
+                <h3 data-i18n="work.automation.title">Evidence collection workflows</h3>
+                <p data-i18n="work.automation.body">
+                  API-driven enrichment and evidence gathering to standardize triage, reduce repetitive work and
+                  improve response consistency.
+                </p>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <section class="section-band contact-band" id="contact">
+          <div class="content-grid contact-grid">
+            <div class="section-intro reveal">
+              <p class="eyebrow" data-i18n="contact.eyebrow">Contact</p>
+              <h2 data-i18n="contact.title">Open to conversations about DFIR, SecOps and security automation.</h2>
+              <p data-i18n="contact.body">The public contact channel for this portfolio is GitHub.</p>
+            </div>
+            <div class="contact-actions reveal">
+              <a class="button primary" href="https://github.com/Arthu133" target="_blank" rel="noreferrer">GitHub</a>
+            </div>
+          </div>
+        </section>
+      </main>
     </div>
-  </section>
-
-
-    <!-- FOOTER -->
-    <footer data-aos="fade-up">
-      <div class="container">
-        <div class="footer__content">
-          <div class="footer__menu">
-            <h3 class="footer__menu-title">Quick access</h3>
-            <ul class="footer__menu-list">
-              <li><a href="#hero">Home</a></li>
-              <li><a href="#about">About</a></li>
-              <li><a href="#services">Skills</a></li>
-              <li><a href="#projects">Projects</a></li>
-              <li><a href="#team">Professional</a></li>
-              <li><a href="#contact">Contact</a></li>
-            </ul>
-          </div>
-  
-          <div class="footer__menu">
-            <h3 class="footer__menu-title">Social media</h3>
-            <ul class="footer__menu-list">
-              <li><a href="https://www.instagram.com/tzndias/" target="_blank">Instagram</a></li>
-              <li><a href="https://github.com/Arthu133" target="_blank">Github</a></li>
-              <li><a href="https://www.linkedin.com/in/arthur-henrique-neves-dias/" target="_blank">Linkedin</a></li>
-            </ul>
-          </div>
-  
-        </div>
-        <div class="footer__bottom">
-          <div class="footer__bottom-icons">
-            <p>Follow-me</p>
-            <a href="https://www.instagram.com/tzndias/" class="instagram" target="_blank">
-              <i class="fab fa-instagram"></i>
-            </a>
-            <a href="https://github.com/Arthu133" class="github" target="_blank">
-              <i class="fab fa-github"></i>
-            </a>
-            <a href="https://www.linkedin.com/in/arthur-henrique-neves-dias/" class="linkedin" target="_blank">
-              <i class="fab fa-linkedin"></i>
-            </a>
-          </div>
-        </div>
-      </div>
-    </footer>
-
-  <!-- FONTAWESOME -->
-  <script src="rm-dev-main/assets/js/fontawesome.min.js"></script>
-
-  <!-- SCRIPTS -->
-  <script src="rm-dev-main/assets/js/tela_introducao.js"></script>
-  <script src="rm-dev-main/assets/js/particles.js"></script>
-  <script src="rm-dev-main/assets/js/script.js"></script>
-  <script src="rm-dev-main/assets/js/themeMode.js"></script>
-  <script src="rm-dev-main/assets/js/emailForm.js"></script>
-  <script src="rm-dev-main/assets/js/voltarTopo.js"></script>
-  
-
-  <!-- AOS -->
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-
-  <!-- Inicialização do AOS -->
-  <script>
-    AOS.init();
-  </script>
-</body>
-
+    <script src="script.js"></script>
+  </body>
 </html>
